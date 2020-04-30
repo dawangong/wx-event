@@ -1,0 +1,30 @@
+{
+  "name": "wx-event",
+  "version": "1.0.0",
+  "description": "小程序端事件总线，兄弟组件通信，子孙组件通信解决方案",
+  "main": "./dist/event.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-cli --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawangong/wx-event.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawangong/wx-event/issues"
+  },
+  "homepage": "https://github.com/dawangong/wx-event#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack": "^4.43.0"
+  }
+}
