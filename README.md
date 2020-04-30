@@ -6,14 +6,14 @@
 - CommonJS
 - ES6 module
 ```javascript
-import Event from 'event';
-const { Event } = require('event');
+import Event from 'wx-event'
+const { Event } = require('wx-event');
 ```
 
 ### How to use ?
 1.创建调度中心(例如：event-manage.js)
 ```javascript
-import Event from 'event'
+import Event from 'wx-event'
 /* 注册事件 */
 wx.event.$increase(new Event('update')) 
 ```
