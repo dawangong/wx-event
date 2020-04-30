@@ -63,6 +63,9 @@ try {
     $once (name, fn) {
       this.$get(name).$once(fn)
     },
+    $remove (name) {
+      this.$get(name).subscribers = [];
+    },
     $clear () {
       publisher.events = []
     },

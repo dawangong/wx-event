@@ -1,6 +1,6 @@
 {
   "name": "wx-event",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "小程序端事件总线，兄弟组件通信，子孙组件通信解决方案",
   "main": "./dist/event.min.js",
   "scripts": {
