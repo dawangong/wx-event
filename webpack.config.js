@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const EsmWebpackPlugin = require('@purtuga/esm-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -10,7 +11,9 @@ module.exports = {
     // 支持script
     library: 'event',
     // 支持require|import
-    libraryTarget: "umd",
+    // libraryTarget: "umd",
+    libraryTarget: "var",
+    umdNamedDefine: true,
     globalObject: 'this',
   },
   module: {
@@ -28,6 +31,7 @@ module.exports = {
       dry: true, // 模拟删除
       verbose: true, // 写入日志
       cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, "dist")]
-    })
+    }),
+    new EsmWebpackPlugin()
   ]
 };

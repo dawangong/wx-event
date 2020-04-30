@@ -2,6 +2,13 @@
 小程序端事件总线，兄弟组件通信，子孙组件通信解决方案。
 
 > DOC
+### 使用支持
+- CommonJS
+- ES6 module
+```javascript
+import Event from 'event';
+const { Event } = require('event');
+```
 
 ### How to use ?
 1.创建调度中心(例如：event-manage.js)
