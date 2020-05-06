@@ -1,5 +1,5 @@
-# wx-event ![release](http://img.shields.io/github/v/release/dawangong/wx-event.svg)
->
+# wx-event ![release](http://img.shields.io/github/v/release/dawangong/wx-event.svg) ![MIT](https://img.shields.io/github/license/dawangong/wx-event.svg)
+---
 小程序端事件总线，兄弟组件通信，隔代组件通信解决方案。
 > DOC
 ### 使用支持
@@ -54,4 +54,4 @@ wx.event.$clear()
 > tips: 为了保证this的指向正确，请使用箭头函数。[如何支持ES6?](https://www.babeljs.cn/docs/)
 
 ### License
-wx-event is MIT licensed.
+wx-event is [MIT licensed](https://github.com/dawangong/wx-event/blob/master/LICENSE).
