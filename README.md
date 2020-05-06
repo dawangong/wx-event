@@ -8,8 +8,10 @@
 import Event from 'wx-event';
 const { Event } = require('wx-event');
 ```
-
 ### How to use ?
+```npm
+npm i wx-event
+```
 1.创建调度中心(例如：event-manage.js)
 ```javascript
 import Event from 'wx-event';
