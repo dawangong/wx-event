@@ -1,5 +1,4 @@
 # wx-event ![release](http://img.shields.io/github/v/release/dawangong/wx-event.svg) ![MIT](https://img.shields.io/github/license/dawangong/wx-event.svg)
----
 小程序端事件总线，兄弟组件通信，隔代组件通信解决方案。
 > DOC
 ### 使用支持
@@ -31,7 +30,7 @@ wx.event.$on('update', params => {
 /* 事件广播 */ 
 wx.event.$broadcast('update', params);  
 ```
-4.其他api
+4.其他api支持
 - $off: 关闭监听
 ```javascript
 wx.event.$off('update');
