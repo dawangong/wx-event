@@ -1,6 +1,6 @@
-# wx-event
-小程序端事件总线，兄弟组件通信，子孙组件通信解决方案。
-
+# wx-event ![release](http://img.shields.io/github/v/release/dawangong/wx-event.svg)
+>
+小程序端事件总线，兄弟组件通信，隔代组件通信解决方案。
 > DOC
 ### 使用支持
 - CommonJS
@@ -24,9 +24,9 @@ import './utils/event-manage';
 3.业务中使用
 ```javascript
 /* 事件监听 */
-wx.event.$on('update', (params => {
+wx.event.$on('update', params => {
       this.setData(params)
-    }));
+    });
     
 /* 事件广播 */ 
 wx.event.$broadcast('update', params);  
@@ -38,9 +38,9 @@ wx.event.$off('update');
 ```
 - $once: 一次性监听
 ```javascript
-wx.event.$once('update', (params => {
+wx.event.$once('update', params => {
       this.setData(params)
-    }));
+    });
 ```
 - $remove: 移除指定事件所有监听
 ```javascript
@@ -52,3 +52,6 @@ wx.event.$clear()
 ```
 
 > tips: 为了保证this的指向正确，请使用箭头函数。[如何支持ES6?](https://www.babeljs.cn/docs/)
+
+### License
+wx-event is MIT licensed.
