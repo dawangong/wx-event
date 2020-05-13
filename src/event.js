@@ -5,17 +5,21 @@
 class Event {
   constructor (name) {
     this.name = name;
+    this.hash = {};
     this.subscribers = []
   }
 
   $on (fn) {
+    if (this.hash.hasOwnProperty(fn)) return false;
+    this.hash[fn] = Symbol();
     this.subscribers.push(fn)
   }
 
   $off (fn) {
     this.subscribers.forEach((_fn, index) => {
       fn === _fn && this.subscribers.splice(index, 1)
-    })
+    });
+    delete this.hash[fn];
   }
 
   $once (fn) {
